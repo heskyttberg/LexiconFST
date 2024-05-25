@@ -1,56 +1,139 @@
 *{
     box-sizing: border-box;
-    
 }
+
+body {
+    width: 1000px;
+    margin:auto;
+}
+
+header, footer {
+    height: 75px;
+    width: 100%;
+}
+
+footer {
+    clear:all;
+    background-color: blueviolet;
+}
+
+h1 {
+    float:left;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+ }
+  
+ h1 {
+    flex: 1;
+ }
+  
+ nav {
+    flex: 1;
+ }
+
+nav ul {
+    flex: 1;
+    list-style: none;
+
+}
+
+nav ul li {
+    float: left;
+    margin: 10px;
+}
+
 body{
     width: 1000px;
-    background-color:  lightpink;
+    background-color:  lightgray;
     margin: auto;
 }
+
 header, footer{
     width: 100%;
     height: 70px;
-    background-color:  lightgray;
 }
-aside{
-    width: 25%;
-    /* height: 500px; */
-    background-color: black;
-    color: yellow;
-    float:left;
+
+header {
+    background-color: aquamarine;
 }
-main{
-    width: 75%;
-    /* height: 500px;*/
+
+footer {
     background-color: blueviolet;
+}
+
+#head {
+    float: left;
+    background-color: aquamarine;
+    height: 75px;
+}
+
+#nav {
+    background-color: hotpink;
+    height: 75px;
+    float: left;
+}
+
+#mainHeader {
+    background-color: blue;
+    height: 75px;
+    width: 30%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+}
+
+#txt01 {
+    background-color: blue;
+    width: 75%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.row2 {
+    padding-left: 15px;
+}
+
+.mainArticle {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#article01 {
+    flex: 1;
+    background-color: blue;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+p{
+    color:yellow;
+}
+
+#article02 {
+    flex: 1;
+    background-color: blue;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+aside {
+    background-color: green;
+    background: green;
+    width: 30%;
+    height: 100%;
     float: right;
 }
-footer{
-    clear: both;
-}
-#mRow1{
-    background-color: darkgreen;
-    color: white;
-    padding: 20px;
-}
-#mRow2{
-    background-color: darkblue;
-    color: yellow;
-}
-#aIMG01{
-    height: 75%;
-    width: 75%;
-    margin: auto;
-}
-article{
-    width: 50%;
-    float: left;
-    padding: 20px;
-}
-#a1{
-    background-color: aqua;
-    color: black;
-}
-#a2{
-    background-color: red;
-}
+
+
+
+
