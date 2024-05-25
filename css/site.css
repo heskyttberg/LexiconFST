@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    width: 1000px;
+    background-color:  lightpink;
+    margin: auto;
+}
+header, footer{
+    width: 100%;
+    height: 70px;
+    background-color:  lightgray;
+}
+aside{
+    width: 25%;
+    /* height: 500px; */
+    background-color: black;
+    color: yellow;
+    float:left;
+}
+main{
+    width: 75%;
+    /* height: 500px;*/
+    background-color: blueviolet;
+    float: right;
+}
+footer{
+    clear: both;
+}
+#mRow1{
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+}
+#mRow2{
+    background-color: darkblue;
+    color: yellow;
+}
+#aIMG01{
+    height: 75%;
+    width: 75%;
+    margin: auto;
+}
+article{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+#a1{
+    background-color: aqua;
+    color: black;
+}
+#a2{
+    background-color: red;
+}
