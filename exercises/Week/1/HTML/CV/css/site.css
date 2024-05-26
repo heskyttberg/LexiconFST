@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: large;
+}
+body{
+    
+    width:1000px;
+    margin:auto;
+}
+header, footer{
+    height:75px;
+    width:100%;
+}
+header{
+    background-color: black;
+    color: yellow;
+}
+footer{
+    clear:both;
+    background-color: blueviolet;
+}
+.row2 {
+    background-color: rgb(145, 28, 69);
+    width: 100%;
+    display:flex;
+}
+main {
+    background-color: darkblue;
+    width: 70%;
+    float: left;
+   
+}
+aside {
+    background-color: maroon;
+    width: 30%;
+    float:left;
+}
+article{
+    background-color: rgb(145, 28, 69);
+    color: lightblue;
+    width:50%;
+    float:left;
+    border:1px solid black;
+    padding:15px;
+}
+.mainArticle{
+   display:flex;
+}
+header h1{
+    float: left;
+    padding: 10px;
+    padding-top: -5px;
+}
+nav {
+    float: left;
+    height: 100%;
+    background-color: black;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    padding-right: 15px;
+    padding-top: 6px;
+}
+article img {
+    width: 100%;
+    height: auto;
+}
+aside{
+    padding: 10px;
+}
+aside ul{
+    list-style: none;
+}
+aside img{
+    width: 70%;
+    height: auto;
+}
+#a01p02{
+    font-weight: bold;
+    color: lightgray;
+}
+.asideRED{
+    color: hotpink;
+}
+.asideGREEN{
+    color: chartreuse;
+    font-weight: bold;
+    font-size: larger;
+}
+.asideAQUA{
+    color: aqua;
+}
+.icons{
+    width:30px;
+    height: auto;
+    align-self:center;
+}
+a{
+    color:lightgreen;
+}
+h2{
+    color: yellow;
+}
+#txt01{
+    color: hotpink;
+}
+
