@@ -1,0 +1,15 @@
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\lexicon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\lexicon.AssemblyInfoInputs.cache
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\lexicon.AssemblyInfo.cs
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\lexicon.csproj.CoreCompileInputs.cache
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\lexicon.sourcelink.json
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\bin\Debug\net8.0\lexicon.exe
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\bin\Debug\net8.0\lexicon.deps.json
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\bin\Debug\net8.0\lexicon.runtimeconfig.json
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\bin\Debug\net8.0\lexicon.dll
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\bin\Debug\net8.0\lexicon.pdb
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\lexicon.dll
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\refint\lexicon.dll
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\lexicon.pdb
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\lexicon.genruntimeconfig.cache
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exercise03\obj\Debug\net8.0\ref\lexicon.dll

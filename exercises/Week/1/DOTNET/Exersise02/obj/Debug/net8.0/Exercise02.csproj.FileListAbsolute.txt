@@ -1,0 +1,15 @@
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\bin\Debug\net8.0\Exercise02.exe
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\bin\Debug\net8.0\Exercise02.deps.json
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\bin\Debug\net8.0\Exercise02.runtimeconfig.json
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\bin\Debug\net8.0\Exercise02.dll
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\bin\Debug\net8.0\Exercise02.pdb
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\Exercise02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\Exercise02.AssemblyInfoInputs.cache
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\Exercise02.AssemblyInfo.cs
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\Exercise02.csproj.CoreCompileInputs.cache
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\Exercise02.sourcelink.json
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\Exercise02.dll
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\refint\Exercise02.dll
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\Exercise02.pdb
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\Exercise02.genruntimeconfig.cache
+C:\Users\heskyttberg\OneDrive\Documents\Development\Lexicon\LexiconFST\exercises\Week\1\DOTNET\Exersise02\obj\Debug\net8.0\ref\Exercise02.dll
