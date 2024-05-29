@@ -1,26 +1,26 @@
-!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Learning JS </title>
-    <link href="css/site.css" rel="stylesheet" />
-</head>
-<body>
-    <h1>Number guessing game</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
 
-    <p>We have selected a number between 1 and 10.</p>
+    <title>Number guessing game</title>
+
+  </head>
+
+  <body>
+    <h1>Guess a number</h1>
+
+    <p>We have selected a random number between 1 and 10. </p>
 
     <div class="form">
-        <label for="number">Number: </label>
-        <input type="number" min="1" max="10" required id="number">
-        <input type="submit" value="Guess">
+      <label for="guess">Number: </label>
+      <input type="number" min="1" max="100" required id="guess" class="guess">
+      <input type="submit" value="Submit guess" class="submit">
     </div>
 
-    <div class="resuls">
-        <p class="lastResult"></p>
-        <p class="lowOrHi"></p>
-    </div>
-    
-</body>
+
+    <p class="result"></p>
+
+    <script src="Exercise08.js"></script>
+  </body>
 </html>

@@ -17,6 +17,11 @@ let h = parseInt((x+y*z)/m);
 msg = 'h=' + h
 console.log(msg);
 
+let f = console.log(x+(y*parseInt(z/m)));
+msg = 'f=' + f;
+console.log(msg)
+
+/*
 // There is only 11 possible ways to set precedence
 // and none will give 60 as result.
 console.log("No parentheses: A+B+C+D");
@@ -42,3 +47,15 @@ console.log(x+((y*z)/m));
 console.log("B + group C+D: A+(B+(C+D))");
 console.log(x+(y*(z/m)));
 
+
+
+
+// With parseInt in a pretty dumb place you can get to 60
+console.log("C+D group: A+B+(C+D)");
+console.log(x+y*parseInt(z/m));
+console.log("A+B and C+D groups: (A+B)+(C+D)");
+console.log((x+y)*parseInt(z/m));
+console.log("B + group C+D: A+(B+(C+D))");
+console.log(x+(y*parseInt(z/m)));
+
+*/

@@ -1,23 +1,35 @@
 
-function Display(){
-  
+windows.onload = init;
 
-    let correctNum = Math.floor((Math.random() * 10) + 1);
 
-    let msg='';
+function init(){
+  let maxNum = 10;
+  let randomNumber = Math.floor(Math.random() * maxNum) + 1;
+  const result = document.querySelector('.result');
+  const submit = document.querySelector('.submit');
+  const guess = document.querySelector('.guess');
 
-    let num = 0;
-    do {
-        num = parseInt(document.getElementById("num1"))
-
-        if(num < correctNum)
-            msg = 'Number too small';
-        else
-            msg = 'Number too big';
-
-        document.getElementById("show").innerHTML = msg;
-    } while (num != correctNum);
-
-    msg = 'CORRECT NUMBER!';
-    document.getElementById("show").innerHTML = msg;
+  submit.addEventListener('click', check);
 }
+
+function check() {
+    const userGuess = Number(guess.value);
+
+    if (userGuess === randomNumber) {
+    result.textContent = 'Congratulations! You got it right!';
+    setGameOver();
+    } else {
+    if(userGuess < randomNumber)
+        result.textContent = 'Last guess was too low!' ;
+    else 
+        result.textContent = 'Last guess was too high!';
+    }
+
+    guess.value = '';
+    guess.focus();
+}
+
+function setGameOver() {
+    guess.disabled = true;
+    submit.disabled = true;
+}  

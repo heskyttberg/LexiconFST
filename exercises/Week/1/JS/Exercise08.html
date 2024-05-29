@@ -1,24 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Learning JS </title>
-    <link href="css/site.css" rel="stylesheet" />
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
 
-</head>
-<body>
-    <h1>Guess a number between 1-10</h1>
-    <form action="Exercise08.html" method="get">
-        <label for="num1">Number:</label><br>
-        <input type="text" id="num1"><br>
+    <title>Number guessing game</title>
 
-    </form>
-    <button type="button" onclick="Display()">Submit</button>
+  </head>
 
-    <h1 id="show"></h1> 
+  <body>
+    <h1>Guess a number</h1>
 
-    <script src="Exercise08.js"></script>
+    <p>We have selected a random number between 1 and 10. </p>
 
-</body>
+    <div class="form">
+      <label for="guess">Number: </label>
+      <input type="number" min="1" max="100" required id="guess" class="guess">
+      <input type="submit" value="Submit guess" class="submit">
+    </div>
+
+
+    <p class="result"></p>
+
+    <script>
+      let maxNum = 10;
+      let randomNumber = Math.floor(Math.random() * maxNum) + 1;
+      const result = document.querySelector('.result');
+      const submit = document.querySelector('.submit');
+      const guess = document.querySelector('.guess');
+
+      function check() {
+        const userGuess = Number(guess.value);
+
+        if (userGuess === randomNumber) {
+          result.textContent = 'Congratulations! You got it right!';
+          setGameOver();
+        } else {
+          if(userGuess < randomNumber)
+            result.textContent = 'Last guess was too low!' ;
+          else 
+            result.textContent = 'Last guess was too high!';
+        }
+
+        guess.value = '';
+        guess.focus();
+      }
+
+      submit.addEventListener('click', check);
+
+      function setGameOver() {
+        guess.disabled = true;
+        submit.disabled = true;
+      }
+        
+    </script>
+  </body>
 </html>

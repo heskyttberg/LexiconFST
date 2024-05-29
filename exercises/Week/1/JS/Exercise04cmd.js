@@ -21,3 +21,13 @@ console.log(date.toTimeString())
 console.log(date.getTime())
 // 973728000000
 
+let d = new Date();
+
+console.log(d);
+
+for (i=0; i<7;i++){
+    d.setDate(date.getDate() + 1);
+    console.log(d.toDateString());
+}
+
+

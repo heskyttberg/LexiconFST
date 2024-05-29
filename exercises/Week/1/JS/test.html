@@ -28,7 +28,7 @@
       const submit = document.querySelector('.submit');
       const guess = document.querySelector('.guess');
 
-      function checkGuess() {
+      function check() {
         const userGuess = Number(guess.value);
 
         if (userGuess === randomNumber) {
@@ -45,7 +45,7 @@
         guess.focus();
       }
 
-      submit.addEventListener('click', checkGuess);
+      submit.addEventListener('click', check);
 
       function setGameOver() {
         guess.disabled = true;
