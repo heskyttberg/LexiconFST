@@ -4,7 +4,6 @@ class circle{
     area;
     diameter;
 
-
     /*  
         D = 2 × r
     Circumference of a Circle	C = 2 × π × r

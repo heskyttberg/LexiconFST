@@ -1,57 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
 
-    <title>Number guessing game</title>
+<head>
+  <meta charset="utf-8">
+  <title>Number guessing game</title>
+</head>
 
-  </head>
+<body>
+  <h1>Guess a number</h1>
 
-  <body>
-    <h1>Guess a number</h1>
+  <p>We have selected a random number between 1 and 10. </p>
 
-    <p>We have selected a random number between 1 and 10. </p>
+  <div class="form">
+    <label for="guess">Number: </label>
+    <input type="number" min="1" max="100" required id="guess" class="guess">
+    <input type="submit" value="Submit guess" class="submit">
+  </div>
 
-    <div class="form">
-      <label for="guess">Number: </label>
-      <input type="number" min="1" max="100" required id="guess" class="guess">
-      <input type="submit" value="Submit guess" class="submit">
-    </div>
+  <p class="result"></p>
 
+  <script src="test.js"></script>    
 
-    <p class="result"></p>
+</body>
 
-    <script>
-      let maxNum = 10;
-      let randomNumber = Math.floor(Math.random() * maxNum) + 1;
-      const result = document.querySelector('.result');
-      const submit = document.querySelector('.submit');
-      const guess = document.querySelector('.guess');
-
-      function check() {
-        const userGuess = Number(guess.value);
-
-        if (userGuess === randomNumber) {
-          result.textContent = 'Congratulations! You got it right!';
-          setGameOver();
-        } else {
-          if(userGuess < randomNumber)
-            result.textContent = 'Last guess was too low!' ;
-          else 
-            result.textContent = 'Last guess was too high!';
-        }
-
-        guess.value = '';
-        guess.focus();
-      }
-
-      submit.addEventListener('click', check);
-
-      function setGameOver() {
-        guess.disabled = true;
-        submit.disabled = true;
-      }
-        
-    </script>
-  </body>
 </html>
