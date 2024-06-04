@@ -1,15 +1,20 @@
-function fibonacci(fNum){
-    if (fNum<2)
-      return fNum;
-    else 
-      return fibonacci(fNum-1) + fibonacci(fNum-2);
-}
+let msg = "";
+let blanks = "";
+let i = 0;
+let j = 9;
+let max = 9;
 
+do {
+    for(i=j;i>0;i--)
+        msg += "*";
 
-const prompt = require("prompt-sync")();
+    for(i=0; i<(max-j)/2;i++)
+        blanks += " ";
 
-let fLen = 0;
-fLen = parseInt(prompt("Enter a positive number as length of fibonacci series: "));
+    console.log(blanks + msg);
+    msg = "";
+    blanks = "";
 
-for(i=0; i<fLen;i++)
-    console.log(fibonacci(i));
+    j--;
+    j--;
+} while (j>0);
