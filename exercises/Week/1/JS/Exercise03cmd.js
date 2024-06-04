@@ -12,4 +12,4 @@ num2 = parseInt(prompt("Enter number 2:"));
 if (num1+1==num2)
     console.log("Result: Consecutive");
 else
-    console.log("Result: Not consecutive")
+    console.log("Result: Not consecutive");
