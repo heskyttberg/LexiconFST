@@ -5,13 +5,13 @@ create table orderRows (
 	, price   real not null
 );
 
-alter table orderRows 
-    add constraint fk_orderRows_orderID_order_id
+alter table orderRows
+    add constraint fk_orderRow_orderID_orders_id
 		foreign key (orderID) 
 		REFERENCES orders (id);
-	
-alter table orderRows (
-	add constraint fk_orderRows_movieID_movies_id
+
+alter table orderRows
+    add constraint fk_orderRows_movieID_movies_id
 		foreign key (movieID) 
 		REFERENCES movies (id);
 

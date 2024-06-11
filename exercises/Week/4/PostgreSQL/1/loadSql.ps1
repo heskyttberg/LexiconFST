@@ -2,7 +2,7 @@
 $dbPass   = 'ronja'
 $dbUser   = 'heskyttberg'
 $dbserver = 'localhost'
-$dbName   = 'Movie'
+$dbName   = 'MovieStore'
 
 # Read in the SQL files we want to run aginsta the database
 $sqlCmd =  Get-Content -Raw .\tables\tblOrders.sql
@@ -12,7 +12,7 @@ $sqlCmd += Get-Content -Raw .\tables\tblMovies.sql
 
 # Connect to the database
 $conn = New-Object System.Data.Odbc.OdbcConnection
-$conn.ConnectionString= "Driver={PostgreSQL Unicode(x64)};Server=$dbServer;Port=5432;Database=$dbName;Uid=$dbUser;Pwd=$dbPass;"
+$conn.ConnectionString= "DSN=MovieStore"
 # Prepare our command to run in DB
 $cmd = new-object System.Data.Odbc.OdbcCommand($sqlCmd,$conn)
 # Open DB connection
