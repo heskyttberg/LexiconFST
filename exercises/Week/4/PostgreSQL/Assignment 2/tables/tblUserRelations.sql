@@ -1,3 +1,6 @@
+-- some session parameters 
+SET client_min_messages TO WARNING;
+
 drop table if exists tblUserRelations;
 --
 create table tblUserRelations (
@@ -9,19 +12,19 @@ create table tblUserRelations (
 
 -- create our composite primary key with specific name
 alter table tblUserRelations
-  add constraint PK_tblUserRelations_user1_user2
+  add constraint pk_tblUserRelations_user1_user2
         primary key (user1, user2);
   
 -- add our foreign key to user table for user1
 alter table tblUserRelations
-  add constraint FK_tblUserRelations_user1_tblUsers_userID
+  add constraint fk_tblUserRelations_user1_tblUsers_userID
         foreign key (user1)
           references tblUsers (userID)
           on delete cascade;
 
 -- add our foreign key to user table for user2          
 alter table tblUserRelations
-  add constraint FK_tblUserRelations_user2_tblUsers_userID
+  add constraint fk_tblUserRelations_user2_tblUsers_userID
         foreign key (user1)
           references tblUsers (userID)
           on delete cascade;

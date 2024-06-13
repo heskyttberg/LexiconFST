@@ -1,3 +1,6 @@
+-- some session parameters 
+SET client_min_messages TO WARNING;
+
 drop table if exists tblUsers;
 /* 
   name is to make it more generic for all DB if and when you might need to 
@@ -35,7 +38,7 @@ create table tblUsers (
  -- we end there there is more things you could add
  
  alter table tblUsers 
-   add constraint PK_tblUsers_userID
+   add constraint pk_tblUsers_userID
    primary key (userID);
  
 -- WE only create the obvius index, needs more indexes here 

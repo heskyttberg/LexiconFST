@@ -1,3 +1,6 @@
+-- some session parameters 
+SET client_min_messages TO WARNING;
+
 drop table if exists tblUserPosts;
 
 -- one table for all posts to save on space and avoiding additonal joins 
@@ -11,18 +14,18 @@ create table tblUserPosts (
 );
 
 alter table tblUserPosts
-  add constraint PK_tblUserPosts
+  add constraint pk_tblUserPosts
     primary key (postID);
     
 alter table tblUserPosts
-  add constraint FK_tblUserPosts_userID_tblUsers_userID
+  add constraint fk_tblUserPosts_userID_tblUsers_userID
     foreign key (userID) 
       references tblUsers(userID)
       on delete cascade;
       
 -- circular references to make sure no orphan comments
 alter table tblUserPosts
-  add constraint FK_tblUserPosts_refID_tblUserPosts_userID
+  add constraint fk_tblUserPosts_refID_tblUserPosts_userID
     foreign key (refID) 
       references tblUserPosts(postID)
       on delete cascade;
@@ -31,3 +34,19 @@ alter table tblUserPosts
 alter table tblUserPosts
   add constraint CHK_tblUserPosts_refID_is_not_null_if_userComment_true
     check ( refID is not null and userComment );
+    
+-- adding some indexes
+create index idx_tblUserPosts_userID
+  on tblUserPosts (userID);
+  
+create index idx_tblUserPosts_refID
+  on tblUserPosts (refID);
+  
+create index idx_tblUserPosts_postTime
+  on tblUserPosts (postTime);
+  
+
+
+
+
+  

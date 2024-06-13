@@ -1,3 +1,6 @@
+-- some session parameters 
+SET client_min_messages TO WARNING;
+
 drop table if exists tblUserFiles;
 /*
   might be more info needed
@@ -18,12 +21,12 @@ create table tblUserFiles (
 
 -- add primary key on image id
 alter table tblUserFiles 
-  add constraint PK_tblUserFiles_fileID
+  add constraint fk_tblUserFiles_fileID
   primary key (fileID);
  
 -- add our foreign key to user table for userID
 alter table tblUserFiles
-  add constraint FK_tblUserFiles_userID_tblUsers_userID
+  add constraint fk_tblUserFiles_userID_tblUsers_userID
         foreign key (userID)
           references tblUsers (userID)
           on delete cascade;
@@ -31,4 +34,5 @@ alter table tblUserFiles
 -- create index for user coloumn
 create index idx_tblUserFiles
   on tblUserFiles (userID);
+
  
