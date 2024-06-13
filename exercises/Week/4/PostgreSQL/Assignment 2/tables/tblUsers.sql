@@ -8,6 +8,10 @@ create table tblUsers (
     userID         uuid default gen_random_uuid()
   , fName          varchar(256) not null
   , lName          varchar(256) not null
+  , mobilePhone1   varchar(25) -- we allow 2 mobile phones
+  , mobilePhone2   varchar(25) -- this is for normalisation avoidning too many table joins
+  , homePhone      varchar(25) -- rare, but could be used for additonal mobile
+  , workPhone      varchar(25) -- if they want to add work phone
   , age            int
   , gender         int                       -- we use inte to accomodate all todays different gender identifications
   , aStreet        varchar(256)              -- Street address
@@ -16,7 +20,7 @@ create table tblUsers (
   , aCountry       varchar(32)               -- Country for surface mail address
   , addAddress1    varchar(64)               -- Might be needed in other countries, later use
   , addAddress2    varchar(64)               -- Might be needed in other countries, later use
-  , otherAddresses boolean                  -- to easily check if user has other addresses or not
+  , otherAddresses boolean                   -- to easily check if user has other addresses or not
   , countryOrigin  varchar(64)
   , countryLiving  varchar(64)
   , bDay           date
